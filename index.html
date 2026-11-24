@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VÉRTICE | Arquitectura Bioclimática, Interiorismo & Bitácora de Diseño</title>
+  <meta name="description" content="Estudio de arquitectura bioclimática, diseño de interiores sensorial y hábitat sostenible. Portafolio de obras residenciales y bitácora de construcción consciente." />
+  
+  <!-- Favicon SVG Arquitectónico -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%23b45309'/><stop offset='100%' stop-color='%23059669'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23g)'/><path d='M20 80 L50 20 L80 80 L50 60 Z' fill='none' stroke='white' stroke-width='7' stroke-linejoin='round'/></svg>" />
+
+  <!-- Tailwind CSS CDN con configuración temática -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            earth: {
+              50: '#fdf8f6',
+              100: '#f2e8e5',
+              200: '#eaddd7',
+              500: '#b45309',
+              600: '#92400e',
+              700: '#78350f',
+              800: '#451a03',
+            }
+          },
+          fontFamily: {
+            display: ['Syne', 'Outfit', 'sans-serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons & Canvas Confetti -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body itemscope itemtype="https://schema.org/ProfessionalService" class="bg-stone-50 text-stone-800 dark:bg-stone-950 dark:text-stone-100 transition-colors duration-300 relative overflow-x-hidden min-h-screen selection:bg-amber-700 selection:text-white arch-grid-pattern">
+
+  <!-- ====================================================================
+       SCHEMA.ORG / MICRODATA: INFORMACIÓN PRINCIPAL DEL NEGOCIO
+       ==================================================================== -->
+  <meta itemprop="name" content="VÉRTICE Arquitectura & Hábitat Sostenible" />
+  <meta itemprop="legalName" content="VÉRTICE Arquitectura & Hábitat Sostenible S.A.S." />
+  <meta itemprop="description" content="Estudio de arquitectura bioclimática, diseño de interiores sensorial, estructuras de madera laminada CLT y hábitat sostenible en Medellín, Colombia." />
+  <link itemprop="url" href="https://vertice-arquitectura.co" />
+  <link itemprop="image" href="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" />
+  <meta itemprop="telephone" content="+576044489120" />
+  <meta itemprop="email" content="estudio@vertice-arquitectura.co" />
+  <meta itemprop="priceRange" content="$$$" />
+  <meta itemprop="currenciesAccepted" content="USD, COP" />
+  <meta itemprop="paymentAccepted" content="Transferencia Bancaria, Tarjeta de Crédito, Cheque Corporativo" />
+  <div itemprop="brand" itemscope itemtype="https://schema.org/Brand" class="hidden">
+    <meta itemprop="name" content="VÉRTICE" />
+    <meta itemprop="slogan" content="Arquitectura Bioclimática & Hábitat Sostenible" />
+  </div>
+  <div itemprop="contactPoint" itemscope itemtype="https://schema.org/ContactPoint" class="hidden">
+    <meta itemprop="contactType" content="customer support" />
+    <meta itemprop="telephone" content="+576044489120" />
+    <meta itemprop="email" content="estudio@vertice-arquitectura.co" />
+    <meta itemprop="availableLanguage" content="Spanish, English" />
+  </div>
+
+  <!-- ====================================================================
+       AMBIENT GLOW ORBS
+       ==================================================================== -->
+  <div class="ambient-glow bg-amber-600/20 w-[500px] h-[500px] -top-24 -left-24"></div>
+  <div class="ambient-glow bg-emerald-600/15 w-[550px] h-[550px] top-[950px] -right-36"></div>
+  <div class="ambient-glow bg-stone-500/20 w-[480px] h-[480px] top-[2400px] -left-36"></div>
+
+  <!-- ====================================================================
+       HEADER / NAVBAR
+       ==================================================================== -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 backdrop-blur-md border-b border-stone-200/70 dark:border-stone-800/70 bg-stone-50/80 dark:bg-stone-950/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-amber-800 via-amber-700 to-emerald-700 flex items-center justify-center text-white shadow-lg shadow-amber-800/20 group-hover:scale-105 transition-transform duration-300">
+          <i data-lucide="triangle" class="w-5 h-5 fill-white"></i>
+        </div>
+        <div>
+          <span itemprop="alternateName" class="text-2xl font-black font-display tracking-tight text-stone-900 dark:text-white flex items-center gap-1">
+            VÉRTICE<span class="text-amber-700 dark:text-amber-500">.</span>
+          </span>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-stone-400 block -mt-1">
+            Arquitectura & Hábitat
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-bold text-stone-600 dark:text-stone-300 tracking-wide uppercase text-xs">
+        <a href="#obras" class="hover:text-amber-700 dark:hover:text-amber-500 transition-colors">Obras</a>
+        <a href="#servicios" class="hover:text-amber-700 dark:hover:text-amber-500 transition-colors">Servicios</a>
+        <a href="#cotizador" class="hover:text-amber-700 dark:hover:text-amber-500 transition-colors">Estimador m²</a>
+        <a href="#bitacora" class="hover:text-amber-700 dark:hover:text-amber-500 transition-colors flex items-center gap-1.5">
+          <span>Bitácora</span>
+          <span class="px-2 py-0.5 text-[10px] font-bold rounded-full bg-amber-100 dark:bg-amber-950/80 text-amber-800 dark:text-amber-300">Blog</span>
+        </a>
+        <a href="#estudio" class="hover:text-amber-700 dark:hover:text-amber-500 transition-colors">Estudio</a>
+        <a href="#contacto" class="hover:text-amber-700 dark:hover:text-amber-500 transition-colors">Contacto</a>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="flex items-center gap-3">
+        <!-- Spotlight Search -->
+        <button onclick="App.openSpotlight()" class="p-2.5 rounded-xl border border-stone-200 dark:border-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-200/60 dark:hover:bg-stone-800 transition-colors flex items-center gap-2 text-xs" title="Buscar obras o bitácora (Ctrl+K)">
+          <i data-lucide="search" class="w-4 h-4"></i>
+          <span class="hidden lg:inline text-stone-400 font-mono text-[11px] bg-stone-100 dark:bg-stone-800 px-1.5 py-0.5 rounded border border-stone-200 dark:border-stone-700">⌘K</span>
+        </button>
+
+        <!-- Dark/Light Mode -->
+        <button onclick="App.toggleTheme()" class="p-2.5 rounded-xl border border-stone-200 dark:border-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-200/60 dark:hover:bg-stone-800 transition-colors" title="Cambiar Tema">
+          <i id="theme-icon" data-lucide="moon" class="w-4 h-4"></i>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="#contacto" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-amber-700 hover:bg-amber-800 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-amber-800/20 transition-all hover:scale-102">
+          <span>Agendar Asesoría</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button onclick="App.toggleMobileMenu()" class="md:hidden p-2.5 rounded-xl border border-stone-200 dark:border-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-200/60 dark:hover:bg-stone-800">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 py-6 border-t border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-950 space-y-4">
+      <a href="#obras" onclick="App.toggleMobileMenu()" class="block py-2 text-sm font-bold uppercase tracking-wider text-stone-700 dark:text-stone-200">Portafolio de Obras</a>
+      <a href="#servicios" onclick="App.toggleMobileMenu()" class="block py-2 text-sm font-bold uppercase tracking-wider text-stone-700 dark:text-stone-200">Servicios Arquitectónicos</a>
+      <a href="#cotizador" onclick="App.toggleMobileMenu()" class="block py-2 text-sm font-bold uppercase tracking-wider text-stone-700 dark:text-stone-200">Estimador de Obra (m²)</a>
+      <a href="#bitacora" onclick="App.toggleMobileMenu()" class="block py-2 text-sm font-bold uppercase tracking-wider text-stone-700 dark:text-stone-200">Bitácora de Diseño (Blog)</a>
+      <a href="#estudio" onclick="App.toggleMobileMenu()" class="block py-2 text-sm font-bold uppercase tracking-wider text-stone-700 dark:text-stone-200">Nuestro Estudio</a>
+      <a href="#contacto" onclick="App.toggleMobileMenu()" class="block py-2 text-sm font-bold uppercase tracking-wider text-stone-700 dark:text-stone-200">Contacto & Citas</a>
+      <div class="pt-4 border-t border-stone-200 dark:border-stone-800">
+        <a href="#contacto" onclick="App.toggleMobileMenu()" class="w-full inline-flex justify-center items-center gap-2 py-3 rounded-xl bg-amber-700 text-white font-bold uppercase tracking-wider text-xs">
+          Agendar Asesoría
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====================================================================
+       HERO SECTION
+       ==================================================================== -->
+  <section class="relative pt-36 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-4xl mx-auto">
+        <!-- Floating Announcement Pill -->
+        <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-amber-50 dark:bg-amber-950/70 border border-amber-200/80 dark:border-amber-800/80 text-amber-800 dark:text-amber-300 text-xs font-bold uppercase tracking-wider mb-8 shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-emerald-600 animate-ping"></span>
+          <span>Premio Nacional de Arquitectura Bioclimática 2026</span>
+          <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+        </div>
+
+        <!-- Hero Title -->
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight font-display text-stone-900 dark:text-white leading-[1.08] mb-8">
+          Arquitectura que nace de la tierra y dialoga con la 
+          <span class="text-gradient-earth">luz natural</span>.
+        </h1>
+
+        <!-- Hero Subtitle -->
+        <p class="text-lg sm:text-xl text-stone-600 dark:text-stone-300 max-w-2xl mx-auto font-normal leading-relaxed mb-10">
+          Diseñamos residencias campestres, hoteles boutique e interiores biofílicos con madera laminada, tierra apisonada y confort térmico pasivo. Sin consumo de carbono innecesario.
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+          <a href="#obras" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-amber-700 hover:bg-amber-800 text-white font-bold text-xs uppercase tracking-widest shadow-xl shadow-amber-800/25 transition-all hover:scale-102 flex items-center justify-center gap-2">
+            <span>Explorar Obras Construidas</span>
+            <i data-lucide="arrow-down-right" class="w-4 h-4"></i>
+          </a>
+          <a href="#bitacora" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 hover:bg-stone-100 dark:hover:bg-stone-800 text-stone-800 dark:text-stone-200 font-bold text-xs uppercase tracking-widest shadow-sm transition-all flex items-center justify-center gap-2">
+            <i data-lucide="book-open" class="w-4 h-4 text-amber-600"></i>
+            <span>Leer Bitácora & Ensayos</span>
+          </a>
+        </div>
+
+        <!-- Quick Stats Container -->
+        <div id="stats-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 pt-8 border-t border-stone-200/80 dark:border-stone-800/80">
+          <!-- Hydrated by App.renderStats() -->
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       RECOGNITION / MARQUEE
+       ==================================================================== -->
+  <section class="py-12 border-y border-stone-200/70 dark:border-stone-800/70 bg-white/40 dark:bg-stone-900/40 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 mb-6 text-center">
+      <span class="text-xs uppercase font-bold tracking-widest text-stone-400">
+        Reconocimientos & Certificaciones Internacionales
+      </span>
+    </div>
+    
+    <div class="flex overflow-hidden select-none">
+      <div class="animate-marquee flex items-center gap-14 sm:gap-20 text-stone-400 dark:text-stone-500 font-display font-black text-lg sm:text-xl tracking-wider uppercase">
+        <span class="hover:text-amber-700 transition-colors flex items-center gap-2"><i data-lucide="award" class="w-5 h-5 text-amber-600"></i> BIENAL PANAMERICANA</span>
+        <span class="hover:text-amber-700 transition-colors flex items-center gap-2"><i data-lucide="shield-check" class="w-5 h-5 text-emerald-600"></i> PASSIVHAUS CERTIFIED</span>
+        <span class="hover:text-amber-700 transition-colors flex items-center gap-2"><i data-lucide="globe" class="w-5 h-5 text-amber-600"></i> ARCHDAILY BUILDING 2026</span>
+        <span class="hover:text-amber-700 transition-colors flex items-center gap-2"><i data-lucide="leaf" class="w-5 h-5 text-emerald-600"></i> LEED GOLD BD+C</span>
+        <span class="hover:text-amber-700 transition-colors flex items-center gap-2"><i data-lucide="feather" class="w-5 h-5 text-amber-600"></i> REVISTA AXXIS DISEÑO</span>
+        
+        <!-- Duplicated for seamless loop -->
+        <span class="hover:text-amber-700 transition-colors flex items-center gap-2"><i data-lucide="award" class="w-5 h-5 text-amber-600"></i> BIENAL PANAMERICANA</span>
+        <span class="hover:text-amber-700 transition-colors flex items-center gap-2"><i data-lucide="shield-check" class="w-5 h-5 text-emerald-600"></i> PASSIVHAUS CERTIFIED</span>
+        <span class="hover:text-amber-700 transition-colors flex items-center gap-2"><i data-lucide="globe" class="w-5 h-5 text-amber-600"></i> ARCHDAILY BUILDING 2026</span>
+        <span class="hover:text-amber-700 transition-colors flex items-center gap-2"><i data-lucide="leaf" class="w-5 h-5 text-emerald-600"></i> LEED GOLD BD+C</span>
+        <span class="hover:text-amber-700 transition-colors flex items-center gap-2"><i data-lucide="feather" class="w-5 h-5 text-amber-600"></i> REVISTA AXXIS DISEÑO</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       PORTFOLIO / OBRAS DESTACADAS (THE BUSINESS PORTFOLIO)
+       ==================================================================== -->
+  <section id="obras" class="py-24 sm:py-32 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12">
+        <div class="max-w-2xl">
+          <span class="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-50 dark:bg-amber-950/70 text-amber-800 dark:text-amber-400 border border-amber-200 dark:border-amber-800">
+            Portafolio de Arquitectura
+          </span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-stone-900 dark:text-white font-display mt-4 mb-4 tracking-tight">
+            Obras que Hablan con su Paisaje
+          </h2>
+          <p class="text-stone-600 dark:text-stone-400 text-base leading-relaxed">
+            Cada proyecto es una respuesta única a las condiciones del terreno, el viento, la topografía y los sueños de quienes lo habitarán.
+          </p>
+        </div>
+
+        <!-- Search Bar within Portfolio -->
+        <div class="w-full lg:w-80 relative">
+          <input type="text" id="project-search-input" placeholder="Buscar por obra, material o ciudad..." class="w-full pl-11 pr-4 py-3 rounded-2xl bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 text-sm text-stone-900 dark:text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-600 shadow-sm" />
+          <i data-lucide="search" class="w-5 h-5 text-stone-400 absolute left-3.5 top-3.5"></i>
+        </div>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="flex flex-wrap items-center gap-2 mb-10 pb-4 border-b border-stone-200 dark:border-stone-800">
+        <button data-category="all" onclick="App.setProjectCategory('all')" class="project-cat-btn px-4 py-2 rounded-xl text-xs font-bold tracking-wider uppercase bg-amber-700 text-white shadow-md shadow-amber-700/25">
+          Todas las Obras
+        </button>
+        <button data-category="residencial" onclick="App.setProjectCategory('residencial')" class="project-cat-btn px-4 py-2 rounded-xl text-xs font-bold tracking-wider uppercase bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-100 dark:hover:bg-stone-700">
+          Residencial Campestre
+        </button>
+        <button data-category="hospitalidad" onclick="App.setProjectCategory('hospitalidad')" class="project-cat-btn px-4 py-2 rounded-xl text-xs font-bold tracking-wider uppercase bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-100 dark:hover:bg-stone-700">
+          Hospitalidad & Hoteles
+        </button>
+        <button data-category="comercial" onclick="App.setProjectCategory('comercial')" class="project-cat-btn px-4 py-2 rounded-xl text-xs font-bold tracking-wider uppercase bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-100 dark:hover:bg-stone-700">
+          Comercial & Pabellones
+        </button>
+        <button data-category="interiorismo" onclick="App.setProjectCategory('interiorismo')" class="project-cat-btn px-4 py-2 rounded-xl text-xs font-bold tracking-wider uppercase bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-100 dark:hover:bg-stone-700">
+          Interiorismo & Reciclaje
+        </button>
+      </div>
+
+      <!-- Projects Grid Container -->
+      <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <article itemprop="subjectOf" itemscope itemtype="https://schema.org/CreativeWork" class="arch-card rounded-3xl overflow-hidden flex flex-col group cursor-pointer" onclick="App.openProjectModal('casa-bruma')">
+          <div class="relative aspect-[16/11] overflow-hidden bg-stone-100 dark:bg-stone-800">
+            <img itemprop="image" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Casa Bruma - Residencia Bioclimática en el Bosque" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <span class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/95 text-stone-900 text-xs font-bold uppercase tracking-wider shadow-lg backdrop-blur">
+                Ver Memoria Arquitectónica <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </span>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase bg-stone-950/80 backdrop-blur text-white border border-white/10">Residencial</span>
+            </div>
+            <div class="absolute top-4 right-4">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-white/90 dark:bg-stone-900/90 backdrop-blur text-stone-800 dark:text-stone-200">480 m²</span>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div itemprop="locationCreated" itemscope itemtype="https://schema.org/Place" class="text-xs font-bold text-amber-700 dark:text-amber-500 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                <span itemprop="name">Villa de Leyva, Boyacá</span> • <span>2026</span>
+              </div>
+              <h3 itemprop="name" class="text-xl font-bold text-stone-900 dark:text-white mb-2 font-display group-hover:text-amber-700 dark:group-hover:text-amber-500 transition-colors">Casa Bruma - Residencia Bioclimática en el Bosque</h3>
+              <p itemprop="description" class="text-stone-600 dark:text-stone-400 text-sm line-clamp-2 mb-4 leading-relaxed">Una vivienda privada incrustada en la ladera de montaña que prescinde de calefacción artificial aprovechando la inercia térmica de la tierra y la radiación solar pasiva.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-2 mb-4 p-2.5 rounded-xl bg-stone-50 dark:bg-stone-800/60 border border-stone-200/80 dark:border-stone-800">
+                <i data-lucide="leaf" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span class="text-xs font-medium text-stone-700 dark:text-stone-300"><strong>0 kWh</strong>: Climatización Activa Consumida</span>
+              </div>
+              <div class="text-[11px] text-stone-500 dark:text-stone-400 truncate pt-2 border-t border-stone-100 dark:border-stone-800"><strong>Materiales:</strong> <span itemprop="material">Tierra apisonada, madera de teca reciclada, piedra pizarra y vidrio térmico</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article itemprop="subjectOf" itemscope itemtype="https://schema.org/CreativeWork" class="arch-card rounded-3xl overflow-hidden flex flex-col group cursor-pointer" onclick="App.openProjectModal('hotel-umbral')">
+          <div class="relative aspect-[16/11] overflow-hidden bg-stone-100 dark:bg-stone-800">
+            <img itemprop="image" src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80" alt="Hotel Boutique Umbral" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <span class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/95 text-stone-900 text-xs font-bold uppercase tracking-wider shadow-lg backdrop-blur">
+                Ver Memoria Arquitectónica <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </span>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase bg-stone-950/80 backdrop-blur text-white border border-white/10">Hospitalidad</span>
+            </div>
+            <div class="absolute top-4 right-4">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-white/90 dark:bg-stone-900/90 backdrop-blur text-stone-800 dark:text-stone-200">1.850 m²</span>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div itemprop="locationCreated" itemscope itemtype="https://schema.org/Place" class="text-xs font-bold text-amber-700 dark:text-amber-500 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                <span itemprop="name">Barichara, Santander</span> • <span>2025</span>
+              </div>
+              <h3 itemprop="name" class="text-xl font-bold text-stone-900 dark:text-white mb-2 font-display group-hover:text-amber-700 dark:group-hover:text-amber-500 transition-colors">Hotel Boutique Umbral - Ecoturismo de Alta Gama</h3>
+              <p itemprop="description" class="text-stone-600 dark:text-stone-400 text-sm line-clamp-2 mb-4 leading-relaxed">Complejo de 14 suites independientes articuladas en torno a huertos de olivos y albercas de agua de manantial, celebrando la técnica ancestral de tapia pisada.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-2 mb-4 p-2.5 rounded-xl bg-stone-50 dark:bg-stone-800/60 border border-stone-200/80 dark:border-stone-800">
+                <i data-lucide="leaf" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span class="text-xs font-medium text-stone-700 dark:text-stone-300"><strong>-68%</strong>: Huella de Carbono Embebida</span>
+              </div>
+              <div class="text-[11px] text-stone-500 dark:text-stone-400 truncate pt-2 border-t border-stone-100 dark:border-stone-800"><strong>Materiales:</strong> <span itemprop="material">Tapia pisada tradicional, mampostería en piedra caliza, caña brava y cal viva</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article itemprop="subjectOf" itemscope itemtype="https://schema.org/CreativeWork" class="arch-card rounded-3xl overflow-hidden flex flex-col group cursor-pointer" onclick="App.openProjectModal('pabellon-botanico')">
+          <div class="relative aspect-[16/11] overflow-hidden bg-stone-100 dark:bg-stone-800">
+            <img itemprop="image" src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80" alt="Pabellón Botánico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <span class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/95 text-stone-900 text-xs font-bold uppercase tracking-wider shadow-lg backdrop-blur">
+                Ver Memoria Arquitectónica <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </span>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase bg-stone-950/80 backdrop-blur text-white border border-white/10">Comercial</span>
+            </div>
+            <div class="absolute top-4 right-4">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-white/90 dark:bg-stone-900/90 backdrop-blur text-stone-800 dark:text-stone-200">620 m²</span>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div itemprop="locationCreated" itemscope itemtype="https://schema.org/Place" class="text-xs font-bold text-amber-700 dark:text-amber-500 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                <span itemprop="name">Rionegro, Antioquia</span> • <span>2026</span>
+              </div>
+              <h3 itemprop="name" class="text-xl font-bold text-stone-900 dark:text-white mb-2 font-display group-hover:text-amber-700 dark:group-hover:text-amber-500 transition-colors">Pabellón Botánico & Café Orquidiario</h3>
+              <p itemprop="description" class="text-stone-600 dark:text-stone-400 text-sm line-clamp-2 mb-4 leading-relaxed">Invernadero bioclimático, tostaduría de café y espacio de eventos cubierto por una bóveda ligera de madera ensamblada mediante encajes carpinteros.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-2 mb-4 p-2.5 rounded-xl bg-stone-50 dark:bg-stone-800/60 border border-stone-200/80 dark:border-stone-800">
+                <i data-lucide="leaf" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span class="text-xs font-medium text-stone-700 dark:text-stone-300"><strong>100%</strong>: Madera Certificada FSC</span>
+              </div>
+              <div class="text-[11px] text-stone-500 dark:text-stone-400 truncate pt-2 border-t border-stone-100 dark:border-stone-800"><strong>Materiales:</strong> <span itemprop="material">Madera laminada cruzada (CLT), guadua certificada, policarbonato difusor y piedra laja</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article itemprop="subjectOf" itemscope itemtype="https://schema.org/CreativeWork" class="arch-card rounded-3xl overflow-hidden flex flex-col group cursor-pointer" onclick="App.openProjectModal('loft-poblado')">
+          <div class="relative aspect-[16/11] overflow-hidden bg-stone-100 dark:bg-stone-800">
+            <img itemprop="image" src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80" alt="Loft Textil" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <span class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/95 text-stone-900 text-xs font-bold uppercase tracking-wider shadow-lg backdrop-blur">
+                Ver Memoria Arquitectónica <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </span>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase bg-stone-950/80 backdrop-blur text-white border border-white/10">Interiorismo</span>
+            </div>
+            <div class="absolute top-4 right-4">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-white/90 dark:bg-stone-900/90 backdrop-blur text-stone-800 dark:text-stone-200">240 m²</span>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div itemprop="locationCreated" itemscope itemtype="https://schema.org/Place" class="text-xs font-bold text-amber-700 dark:text-amber-500 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                <span itemprop="name">Medellín, Antioquia</span> • <span>2025</span>
+              </div>
+              <h3 itemprop="name" class="text-xl font-bold text-stone-900 dark:text-white mb-2 font-display group-hover:text-amber-700 dark:group-hover:text-amber-500 transition-colors">Loft Textil - Reconversión de Nave Industrial</h3>
+              <p itemprop="description" class="text-stone-600 dark:text-stone-400 text-sm line-clamp-2 mb-4 leading-relaxed">Transformación de una antigua fábrica de hilados de los años 60 en una residencia contemporánea y taller de arte con dobles alturas y patios de luz.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-2 mb-4 p-2.5 rounded-xl bg-stone-50 dark:bg-stone-800/60 border border-stone-200/80 dark:border-stone-800">
+                <i data-lucide="leaf" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span class="text-xs font-medium text-stone-700 dark:text-stone-300"><strong>90%</strong>: Estructura Original Conservada</span>
+              </div>
+              <div class="text-[11px] text-stone-500 dark:text-stone-400 truncate pt-2 border-t border-stone-100 dark:border-stone-800"><strong>Materiales:</strong> <span itemprop="material">Concreto pulido original, perfiles de acero oxidado tratado, roble salvaje y lino crudo</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article itemprop="subjectOf" itemscope itemtype="https://schema.org/CreativeWork" class="arch-card rounded-3xl overflow-hidden flex flex-col group cursor-pointer" onclick="App.openProjectModal('casa-acantilado')">
+          <div class="relative aspect-[16/11] overflow-hidden bg-stone-100 dark:bg-stone-800">
+            <img itemprop="image" src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=1200&q=80" alt="Casa del Acantilado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <span class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/95 text-stone-900 text-xs font-bold uppercase tracking-wider shadow-lg backdrop-blur">
+                Ver Memoria Arquitectónica <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </span>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase bg-stone-950/80 backdrop-blur text-white border border-white/10">Residencial</span>
+            </div>
+            <div class="absolute top-4 right-4">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-white/90 dark:bg-stone-900/90 backdrop-blur text-stone-800 dark:text-stone-200">550 m²</span>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div itemprop="locationCreated" itemscope itemtype="https://schema.org/Place" class="text-xs font-bold text-amber-700 dark:text-amber-500 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                <span itemprop="name">Guatapé, Antioquia</span> • <span>2024</span>
+              </div>
+              <h3 itemprop="name" class="text-xl font-bold text-stone-900 dark:text-white mb-2 font-display group-hover:text-amber-700 dark:group-hover:text-amber-500 transition-colors">Casa del Acantilado - Mirador sobre el Embalse</h3>
+              <p itemprop="description" class="text-stone-600 dark:text-stone-400 text-sm line-clamp-2 mb-4 leading-relaxed">Volúmenes en voladizo anclados a la roca que dirigen la mirada hacia el agua, con techos verdes que fusionan la casa con la topografía agreste.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-2 mb-4 p-2.5 rounded-xl bg-stone-50 dark:bg-stone-800/60 border border-stone-200/80 dark:border-stone-800">
+                <i data-lucide="leaf" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span class="text-xs font-medium text-stone-700 dark:text-stone-300"><strong>-4.2°C</strong>: Reducción Térmica por Cubierta Verde</span>
+              </div>
+              <div class="text-[11px] text-stone-500 dark:text-stone-400 truncate pt-2 border-t border-stone-100 dark:border-stone-800"><strong>Materiales:</strong> <span itemprop="material">Concreto arquitectónico ocre, basalto volcánico, madera termotratada y vidrio de control solar</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article itemprop="subjectOf" itemscope itemtype="https://schema.org/CreativeWork" class="arch-card rounded-3xl overflow-hidden flex flex-col group cursor-pointer" onclick="App.openProjectModal('restaurante-origen')">
+          <div class="relative aspect-[16/11] overflow-hidden bg-stone-100 dark:bg-stone-800">
+            <img itemprop="image" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Restaurante Origen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <span class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/95 text-stone-900 text-xs font-bold uppercase tracking-wider shadow-lg backdrop-blur">
+                Ver Memoria Arquitectónica <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </span>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase bg-stone-950/80 backdrop-blur text-white border border-white/10">Hospitalidad</span>
+            </div>
+            <div class="absolute top-4 right-4">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-white/90 dark:bg-stone-900/90 backdrop-blur text-stone-800 dark:text-stone-200">380 m²</span>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div itemprop="locationCreated" itemscope itemtype="https://schema.org/Place" class="text-xs font-bold text-amber-700 dark:text-amber-500 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                <span itemprop="name">Cartagena de Indias, Bolívar</span> • <span>2024</span>
+              </div>
+              <h3 itemprop="name" class="text-xl font-bold text-stone-900 dark:text-white mb-2 font-display group-hover:text-amber-700 dark:group-hover:text-amber-500 transition-colors">Restaurante Origen - Gastronomía & Tierra en el Centro Histórico</h3>
+              <p itemprop="description" class="text-stone-600 dark:text-stone-400 text-sm line-clamp-2 mb-4 leading-relaxed">Intervención de un claustro colonial del siglo XVII creando una atmósfera cavernosa y sensual mediante revoques continuos de barro rojo y celosías de madera calada.</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-2 mb-4 p-2.5 rounded-xl bg-stone-50 dark:bg-stone-800/60 border border-stone-200/80 dark:border-stone-800">
+                <i data-lucide="leaf" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span class="text-xs font-medium text-stone-700 dark:text-stone-300"><strong>100%</strong>: Ventilación Cruzada Pasiva</span>
+              </div>
+              <div class="text-[11px] text-stone-500 dark:text-stone-400 truncate pt-2 border-t border-stone-100 dark:border-stone-800"><strong>Materiales:</strong> <span itemprop="material">Revoques de arcilla roja y cal, vigas de madera de mangle recuperada, piedra coralina y latón envejecido</span></div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       SERVICES SECTION (SCHEMA.ORG: OFFERCATALOG & SERVICE)
+       ==================================================================== -->
+  <section id="servicios" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog" class="py-24 sm:py-32 bg-stone-100/70 dark:bg-stone-900/50 border-y border-stone-200/70 dark:border-stone-800/70 relative">
+    <meta itemprop="name" content="Catálogo de Servicios Arquitectónicos e Interiorismo" />
+    <meta itemprop="description" content="Servicios especializados en arquitectura bioclimática, estructuras de madera laminada CLT, tapia pisada e interiorismo sensorial." />
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-2xl mb-16">
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-50 dark:bg-amber-950/70 text-amber-800 dark:text-amber-400 border border-amber-200 dark:border-amber-800">
+          Práctica Profesional
+        </span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-stone-900 dark:text-white font-display mt-4 mb-4 tracking-tight">
+          Nuestras Líneas de Intervención
+        </h2>
+        <p class="text-stone-600 dark:text-stone-400 text-base leading-relaxed">
+          Desde la concepción arquitectónica del anteproyecto hasta la entrega de llaves y paisajismo vivo, controlamos cada detalle constructivo.
+        </p>
+      </div>
+
+      <!-- Services Grid Container -->
+      <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+        <div itemprop="itemListElement" itemscope itemtype="https://schema.org/Service" class="arch-card rounded-3xl p-8 flex flex-col justify-between relative group hover:border-amber-600/60 transition-all duration-300">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-14 h-14 rounded-2xl bg-amber-50 dark:bg-amber-950/50 text-amber-700 dark:text-amber-400 flex items-center justify-center group-hover:scale-105 group-hover:bg-amber-700 group-hover:text-white transition-all duration-300">
+                <i data-lucide="home" class="w-7 h-7"></i>
+              </div>
+              <span class="text-xs font-bold px-3 py-1 rounded-full bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 tracking-wide uppercase">Viviendas Singulares</span>
+            </div>
+            <h3 itemprop="name" class="text-2xl font-bold text-stone-900 dark:text-white mb-3 font-display">Arquitectura Residencial de Autor</h3>
+            <p itemprop="description" class="text-stone-600 dark:text-stone-400 text-sm mb-6 leading-relaxed">Diseño integral de casas unifamiliares, fincas de recreo y villas bioclimáticas personalizadas a la medida del estilo de vida de cada familia.</p>
+            <ul class="space-y-2.5 mb-8 text-sm text-stone-600 dark:text-stone-300">
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i><span>Estudios Topográficos y Asoleamiento Solar</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i><span>Diseño Arquitectónico Bioclimático Passivhaus</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i><span>Selección de Materiales Nobles (Madera, Piedra, Tierra)</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i><span>Planos Ejecutivos de Construcción y Detalles 1:1</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i><span>Dirección Arquitectónica y Supervisión en Obra</span></li>
+            </ul>
+          </div>
+          <div class="pt-6 border-t border-stone-200 dark:border-stone-800 flex items-center justify-between">
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <meta itemprop="price" content="45" />
+              <meta itemprop="priceCurrency" content="USD" />
+              <link itemprop="availability" href="https://schema.org/InStock" />
+              <div class="text-[11px] uppercase tracking-wider text-stone-400">Honorarios Base</div>
+              <div class="text-sm font-bold text-stone-900 dark:text-white">Desde  USD / m² proyectado</div>
+            </div>
+            <button onclick="App.selectServiceForCalculator('residencial')" class="px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-xl bg-amber-50 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 hover:bg-amber-700 hover:text-white transition-colors flex items-center gap-1.5"><span>Calcular m²</span><i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+          </div>
+        </div>
+
+        <div itemprop="itemListElement" itemscope itemtype="https://schema.org/Service" class="arch-card rounded-3xl p-8 flex flex-col justify-between relative group hover:border-amber-600/60 transition-all duration-300">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-14 h-14 rounded-2xl bg-amber-50 dark:bg-amber-950/50 text-amber-700 dark:text-amber-400 flex items-center justify-center group-hover:scale-105 group-hover:bg-amber-700 group-hover:text-white transition-all duration-300">
+                <i data-lucide="sofa" class="w-7 h-7"></i>
+              </div>
+              <span class="text-xs font-bold px-3 py-1 rounded-full bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 tracking-wide uppercase">Espacios Sensoriales</span>
+            </div>
+            <h3 itemprop="name" class="text-2xl font-bold text-stone-900 dark:text-white mb-3 font-display">Diseño Interior & Retail Experiencial</h3>
+            <p itemprop="description" class="text-stone-600 dark:text-stone-400 text-sm mb-6 leading-relaxed">Transformamos interiores residenciales, restaurantes, hoteles boutique y tiendas conceptuales en atmósferas envolventes de bienestar y textura.</p>
+            <ul class="space-y-2.5 mb-8 text-sm text-stone-600 dark:text-stone-300">
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i><span>Diseño de Mobiliario a Medida y Carpintería Fina</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i><span>Iluminación Escenográfica y Circadiana</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i><span>Paletas Cromáticas Orgánicas y Acabados de Barro</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i><span>Acondicionamiento Acústico y Confort Térmico</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i><span>Selección Curada de Arte y Decoración Textil</span></li>
+            </ul>
+          </div>
+          <div class="pt-6 border-t border-stone-200 dark:border-stone-800 flex items-center justify-between">
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <meta itemprop="price" content="30" />
+              <meta itemprop="priceCurrency" content="USD" />
+              <link itemprop="availability" href="https://schema.org/InStock" />
+              <div class="text-[11px] uppercase tracking-wider text-stone-400">Honorarios Base</div>
+              <div class="text-sm font-bold text-stone-900 dark:text-white">Desde  USD / m² proyectado</div>
+            </div>
+            <button onclick="App.selectServiceForCalculator('interiorismo')" class="px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-xl bg-amber-50 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 hover:bg-amber-700 hover:text-white transition-colors flex items-center gap-1.5"><span>Calcular m²</span><i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+          </div>
+        </div>
+
+        <div itemprop="itemListElement" itemscope itemtype="https://schema.org/Service" class="arch-card rounded-3xl p-8 flex flex-col justify-between relative group hover:border-amber-600/60 transition-all duration-300">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-14 h-14 rounded-2xl bg-amber-50 dark:bg-amber-950/50 text-amber-700 dark:text-amber-400 flex items-center justify-center group-hover:scale-105 group-hover:bg-amber-700 group-hover:text-white transition-all duration-300">
+                <i data-lucide="landmark" class="w-7 h-7"></i>
+              </div>
+              <span class="text-xs font-bold px-3 py-1 rounded-full bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 tracking-wide uppercase">Valor Histórico</span>
+            </div>
+            <h3 itemprop="name" class="text-2xl font-bold text-stone-900 dark:text-white mb-3 font-display">Rehabilitación Patrimonial & Reciclaje</h3>
+            <p itemprop="description" class="text-stone-600 dark:text-stone-400 text-sm mb-6 leading-relaxed">Rescatamos inmuebles antiguos, naves industriales y casas de valor patrimonial otorgándoles una segunda vida contemporánea sin borrar su memoria.</p>
+            <ul class="space-y-2.5 mb-8 text-sm text-stone-600 dark:text-stone-300">
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i><span>Diagnóstico Estructural y Patológico del Inmueble</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i><span>Consolidación de Muros Antiguos y Cubiertas</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i><span>Integración de Redes Modernas Invisibles</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i><span>Trámites de Licenciamiento ante Entes Patrimoniales</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i><span>Restauración Artesanal de Carpinterías y Herrería</span></li>
+            </ul>
+          </div>
+          <div class="pt-6 border-t border-stone-200 dark:border-stone-800 flex items-center justify-between">
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <meta itemprop="price" content="50" />
+              <meta itemprop="priceCurrency" content="USD" />
+              <link itemprop="availability" href="https://schema.org/InStock" />
+              <div class="text-[11px] uppercase tracking-wider text-stone-400">Honorarios Base</div>
+              <div class="text-sm font-bold text-stone-900 dark:text-white">Desde  USD / m² proyectado</div>
+            </div>
+            <button onclick="App.selectServiceForCalculator('rehabilitacion')" class="px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-xl bg-amber-50 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 hover:bg-amber-700 hover:text-white transition-colors flex items-center gap-1.5"><span>Calcular m²</span><i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+          </div>
+        </div>
+
+        <div itemprop="itemListElement" itemscope itemtype="https://schema.org/Service" class="arch-card rounded-3xl p-8 flex flex-col justify-between relative group hover:border-amber-600/60 transition-all duration-300">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-14 h-14 rounded-2xl bg-amber-50 dark:bg-amber-950/50 text-amber-700 dark:text-amber-400 flex items-center justify-center group-hover:scale-105 group-hover:bg-amber-700 group-hover:text-white transition-all duration-300">
+                <i data-lucide="trees" class="w-7 h-7"></i>
+              </div>
+              <span class="text-xs font-bold px-3 py-1 rounded-full bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 tracking-wide uppercase">Regeneración Ecológica</span>
+            </div>
+            <h3 itemprop="name" class="text-2xl font-bold text-stone-900 dark:text-white mb-3 font-display">Paisajismo & Jardines Biofílicos</h3>
+            <p itemprop="description" class="text-stone-600 dark:text-stone-400 text-sm mb-6 leading-relaxed">Integración radical del entorno botánico con la arquitectura mediante especies nativas, humedales de fitodepuración y cubiertas vegetales vivas.</p>
+            <ul class="space-y-2.5 mb-8 text-sm text-stone-600 dark:text-stone-300">
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i><span>Estudio Botánico de Flora Autóctona</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i><span>Diseño de Jardines de Bajo Consumo Hídrico</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i><span>Piscinas Naturales y Espejos de Agua Vivos</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i><span>Sistemas de Cosecha y Reutilización de Lluvia</span></li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i><span>Cubiertas Verdes y Patios Interiores Vivos</span></li>
+            </ul>
+          </div>
+          <div class="pt-6 border-t border-stone-200 dark:border-stone-800 flex items-center justify-between">
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <meta itemprop="price" content="20" />
+              <meta itemprop="priceCurrency" content="USD" />
+              <link itemprop="availability" href="https://schema.org/InStock" />
+              <div class="text-[11px] uppercase tracking-wider text-stone-400">Honorarios Base</div>
+              <div class="text-sm font-bold text-stone-900 dark:text-white">Desde  USD / m² proyectado</div>
+            </div>
+            <button onclick="App.selectServiceForCalculator('paisajismo')" class="px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-xl bg-amber-50 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 hover:bg-amber-700 hover:text-white transition-colors flex items-center gap-1.5"><span>Calcular m²</span><i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       INTERACTIVE ESTIMATOR / CALCULADORA DE METROS CUADRADOS
+       ==================================================================== -->
+  <section id="cotizador" class="py-24 sm:py-32 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="arch-card rounded-3xl p-8 sm:p-12 lg:p-16 border border-amber-600/30 relative overflow-hidden">
+        <div class="max-w-3xl mb-12">
+          <span class="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-50 dark:bg-amber-950/70 text-amber-800 dark:text-amber-400 border border-amber-200 dark:border-amber-800">
+            Estimador de Presupuesto en Vivo
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-black text-stone-900 dark:text-white font-display mt-4 mb-3">
+            Calcula la Inversión de tu Próxima Obra
+          </h2>
+          <p class="text-stone-600 dark:text-stone-400 text-sm sm:text-base leading-relaxed">
+            Ajusta los metros cuadrados a proyectar, la tipología arquitectónica y el nivel de estándar bioclimático para obtener un estimado preliminar transparente.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          
+          <!-- Controls -->
+          <div class="lg:col-span-7 space-y-8">
+            
+            <!-- Step 1: Typology -->
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-stone-400 mb-3">1. Tipología de Proyecto</label>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                <label class="flex flex-col p-3.5 rounded-2xl border border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-900 cursor-pointer hover:border-amber-600 has-[:checked]:border-amber-700 has-[:checked]:bg-amber-50/50 dark:has-[:checked]:bg-amber-950/30 transition-all">
+                  <input type="radio" name="calc_typology" value="residencial" class="arch-calc-trigger sr-only" checked />
+                  <span class="text-xs font-bold text-stone-900 dark:text-white mb-1">Residencial</span>
+                  <span class="text-[11px] text-stone-500">Casa de campo</span>
+                </label>
+                <label class="flex flex-col p-3.5 rounded-2xl border border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-900 cursor-pointer hover:border-amber-600 has-[:checked]:border-amber-700 has-[:checked]:bg-amber-50/50 dark:has-[:checked]:bg-amber-950/30 transition-all">
+                  <input type="radio" name="calc_typology" value="interiorismo" class="arch-calc-trigger sr-only" />
+                  <span class="text-xs font-bold text-stone-900 dark:text-white mb-1">Interiorismo</span>
+                  <span class="text-[11px] text-stone-500">Remodelación</span>
+                </label>
+                <label class="flex flex-col p-3.5 rounded-2xl border border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-900 cursor-pointer hover:border-amber-600 has-[:checked]:border-amber-700 has-[:checked]:bg-amber-50/50 dark:has-[:checked]:bg-amber-950/30 transition-all">
+                  <input type="radio" name="calc_typology" value="rehabilitacion" class="arch-calc-trigger sr-only" />
+                  <span class="text-xs font-bold text-stone-900 dark:text-white mb-1">Patrimonio</span>
+                  <span class="text-[11px] text-stone-500">Reciclaje edilicio</span>
+                </label>
+                <label class="flex flex-col p-3.5 rounded-2xl border border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-900 cursor-pointer hover:border-amber-600 has-[:checked]:border-amber-700 has-[:checked]:bg-amber-50/50 dark:has-[:checked]:bg-amber-950/30 transition-all">
+                  <input type="radio" name="calc_typology" value="paisajismo" class="arch-calc-trigger sr-only" />
+                  <span class="text-xs font-bold text-stone-900 dark:text-white mb-1">Paisajismo</span>
+                  <span class="text-[11px] text-stone-500">Jardín & piscina</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 2: Area in m2 Slider -->
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <label class="text-xs font-bold uppercase tracking-wider text-stone-400">2. Metros Cuadrados a Construir / Diseñar</label>
+                <span id="calc-area-val" class="text-base font-black text-amber-700 dark:text-amber-500 font-display">250 m²</span>
+              </div>
+              <input type="range" id="calc-area-slider" min="60" max="1000" step="10" value="250" class="arch-calc-trigger w-full h-2.5 bg-stone-200 dark:bg-stone-700 rounded-lg appearance-none cursor-pointer accent-amber-700" />
+              <div class="flex justify-between text-[11px] text-stone-400 mt-1">
+                <span>60 m² (Loft)</span>
+                <span>250 m² (Casa Media)</span>
+                <span>500 m² (Villa)</span>
+                <span>1.000 m² (Finca/Hotel)</span>
+              </div>
+            </div>
+
+            <!-- Step 3: Bioclimatic Standard -->
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-stone-400 mb-3">3. Nivel de Estándar Bioclimático</label>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <label class="p-4 rounded-2xl border border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-900 cursor-pointer hover:border-amber-600 has-[:checked]:border-amber-700 has-[:checked]:bg-amber-50/50 dark:has-[:checked]:bg-amber-950/30 transition-all">
+                  <input type="radio" name="calc_standard" value="confort" class="arch-calc-trigger sr-only" />
+                  <div class="text-xs font-bold text-stone-900 dark:text-white">Confort Esencial</div>
+                  <div class="text-[11px] text-stone-500 mt-1">Asoleamiento & ventilación pasiva</div>
+                </label>
+                <label class="p-4 rounded-2xl border border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-900 cursor-pointer hover:border-amber-600 has-[:checked]:border-amber-700 has-[:checked]:bg-amber-50/50 dark:has-[:checked]:bg-amber-950/30 transition-all">
+                  <input type="radio" name="calc_standard" value="premium" class="arch-calc-trigger sr-only" checked />
+                  <div class="text-xs font-bold text-stone-900 dark:text-white">Alta Gama Sostenible</div>
+                  <div class="text-[11px] text-stone-500 mt-1">Madera noble & masa térmica</div>
+                </label>
+                <label class="p-4 rounded-2xl border border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-900 cursor-pointer hover:border-amber-600 has-[:checked]:border-amber-700 has-[:checked]:bg-amber-50/50 dark:has-[:checked]:bg-amber-950/30 transition-all">
+                  <input type="radio" name="calc_standard" value="passivhaus" class="arch-calc-trigger sr-only" />
+                  <div class="text-xs font-bold text-stone-900 dark:text-white">Passivhaus Net-Zero</div>
+                  <div class="text-[11px] text-stone-500 mt-1">Cero consumo eléctrico neto</div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 4: Addons -->
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-stone-400 mb-3">4. Tecnologías e Integraciones Opcionales</label>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <label class="flex items-center gap-3 p-3 rounded-xl border border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-900 cursor-pointer">
+                  <input type="checkbox" name="calc_addon" value="7500" class="arch-calc-trigger rounded text-amber-700 focus:ring-amber-600" />
+                  <span class="text-xs font-medium text-stone-700 dark:text-stone-300">Piscina Natural de Fitodepuración (+ $7,500)</span>
+                </label>
+                <label class="flex items-center gap-3 p-3 rounded-xl border border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-900 cursor-pointer">
+                  <input type="checkbox" name="calc_addon" value="6200" class="arch-calc-trigger rounded text-amber-700 focus:ring-amber-600" />
+                  <span class="text-xs font-medium text-stone-700 dark:text-stone-300">Placas Solares & Batería Litio (+ $6,200)</span>
+                </label>
+                <label class="flex items-center gap-3 p-3 rounded-xl border border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-900 cursor-pointer">
+                  <input type="checkbox" name="calc_addon" value="4800" class="arch-calc-trigger rounded text-amber-700 focus:ring-amber-600" />
+                  <span class="text-xs font-medium text-stone-700 dark:text-stone-300">Domótica & Luz Circadiana (+ $4,800)</span>
+                </label>
+                <label class="flex items-center gap-3 p-3 rounded-xl border border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-900 cursor-pointer">
+                  <input type="checkbox" name="calc_addon" value="3500" class="arch-calc-trigger rounded text-amber-700 focus:ring-amber-600" />
+                  <span class="text-xs font-medium text-stone-700 dark:text-stone-300">Cosecha & Purificación de Lluvia (+ $3,500)</span>
+                </label>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Result Card -->
+          <div class="lg:col-span-5 flex flex-col justify-between p-8 rounded-3xl bg-stone-900 text-white shadow-2xl border border-stone-800">
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-amber-400">Presupuesto Estimado</span>
+                <span class="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-[11px] font-bold">Obra + Diseño</span>
+              </div>
+
+              <div class="mb-8">
+                <div class="text-xs text-stone-400 mb-1">Rango Estimado de Inversión Global</div>
+                <div id="calc-price-result" class="text-3xl sm:text-4xl font-black font-display text-amber-400">
+                  $295,000 - $350,000 USD
+                </div>
+              </div>
+
+              <div class="space-y-4 mb-8 text-sm">
+                <div class="flex items-center justify-between py-2 border-b border-stone-800">
+                  <span class="text-stone-400">Plazo Total (Diseño + Obra)</span>
+                  <span id="calc-time-result" class="font-bold text-stone-200">6 a 9 meses</span>
+                </div>
+                <div class="flex items-center justify-between py-2 border-b border-stone-800">
+                  <span class="text-stone-400">CO₂ Evitado por Materiales Nobles</span>
+                  <span id="calc-carbon-result" class="font-bold text-emerald-400">~70 Toneladas</span>
+                </div>
+                <div class="flex items-center justify-between py-2 border-b border-stone-800">
+                  <span class="text-stone-400">Supervisión en Obra</span>
+                  <span class="font-bold text-stone-200">Visitas Semanales 1:1</span>
+                </div>
+              </div>
+            </div>
+
+            <button onclick="App.applyCalculatorToContact()" class="w-full py-4 rounded-2xl bg-amber-700 hover:bg-amber-600 text-white font-bold text-xs uppercase tracking-widest shadow-lg shadow-amber-800/30 transition-all flex items-center justify-center gap-2">
+              <span>Transferir Datos y Agendar Asesoría</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       BITÁCORA DE ARQUITECTURA & DISEÑO (SCHEMA.ORG: BLOG)
+       ==================================================================== -->
+  <section id="bitacora" itemprop="subjectOf" itemscope itemtype="https://schema.org/Blog" class="py-24 sm:py-32 bg-stone-100/70 dark:bg-stone-900/50 border-y border-stone-200/70 dark:border-stone-800/70 relative">
+    <meta itemprop="name" content="El Cuaderno de Obra - Bitácora de Arquitectura" />
+    <meta itemprop="description" content="Ensayos sobre madera CLT, arquitectura pasiva, neuroarquitectura y sostenibilidad." />
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12">
+        <div class="max-w-2xl">
+          <span class="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-50 dark:bg-amber-950/70 text-amber-800 dark:text-amber-400 border border-amber-200 dark:border-amber-800">
+            El Cuaderno de Obra
+          </span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-stone-900 dark:text-white font-display mt-4 mb-4 tracking-tight">
+            Bitácora de Arquitectura & Pensamiento
+          </h2>
+          <p class="text-stone-600 dark:text-stone-400 text-base leading-relaxed">
+            Reflexiones teóricas, análisis de nuevos materiales sustentables, lecciones de obra y guías prácticas para futuros propietarios.
+          </p>
+        </div>
+
+        <!-- Search Bar within Blog -->
+        <div class="w-full lg:w-80 relative">
+          <input type="text" id="blog-search-input" placeholder="Buscar por tema o material..." class="w-full pl-11 pr-4 py-3 rounded-2xl bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 text-sm text-stone-900 dark:text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-600 shadow-sm" />
+          <i data-lucide="search" class="w-5 h-5 text-stone-400 absolute left-3.5 top-3.5"></i>
+        </div>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="flex flex-wrap items-center gap-2 mb-10 pb-4 border-b border-stone-200 dark:border-stone-800">
+        <button data-category="all" onclick="App.setBlogCategory('all')" class="blog-cat-btn px-4 py-2 rounded-xl text-xs font-bold tracking-wider uppercase bg-amber-700 text-white shadow-md shadow-amber-700/25">
+          Todas las Entradas
+        </button>
+        <button data-category="materiales" onclick="App.setBlogCategory('materiales')" class="blog-cat-btn px-4 py-2 rounded-xl text-xs font-bold tracking-wider uppercase bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-100 dark:hover:bg-stone-700">
+          Materiales & Innovación
+        </button>
+        <button data-category="sostenibilidad" onclick="App.setBlogCategory('sostenibilidad')" class="blog-cat-btn px-4 py-2 rounded-xl text-xs font-bold tracking-wider uppercase bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-100 dark:hover:bg-stone-700">
+          Sostenibilidad & Passivhaus
+        </button>
+        <button data-category="interiorismo" onclick="App.setBlogCategory('interiorismo')" class="blog-cat-btn px-4 py-2 rounded-xl text-xs font-bold tracking-wider uppercase bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-100 dark:hover:bg-stone-700">
+          Interiorismo & Bienestar
+        </button>
+        <button data-category="teoria" onclick="App.setBlogCategory('teoria')" class="blog-cat-btn px-4 py-2 rounded-xl text-xs font-bold tracking-wider uppercase bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-100 dark:hover:bg-stone-700">
+          Teoría & Guía de Obra
+        </button>
+      </div>
+
+      <!-- Featured Post Container -->
+      <div id="blog-hero-post">
+        <div itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting" class="arch-card rounded-3xl overflow-hidden mb-12 border border-amber-600/30 hover:border-amber-600/60 transition-all duration-300 cursor-pointer" onclick="App.openArticleModal('madera-clt')">
+          <div class="grid grid-cols-1 lg:grid-cols-12">
+            <div class="lg:col-span-7 relative aspect-[16/10] lg:aspect-auto overflow-hidden">
+              <img itemprop="image" src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80" alt="La Revolución Silenciosa del CLT" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+              <div class="absolute top-4 left-4">
+                <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-700 text-white shadow-lg flex items-center gap-1.5">
+                  <i data-lucide="bookmark" class="w-3.5 h-3.5 fill-white"></i> Ensayo Destacado
+                </span>
+              </div>
+            </div>
+            <div class="lg:col-span-5 p-8 lg:p-10 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-3 text-xs font-semibold text-stone-500 dark:text-stone-400 mb-3">
+                  <span class="text-amber-700 dark:text-amber-500 uppercase tracking-wider">Materiales & Innovación</span>
+                  <span>•</span>
+                  <span>7 min lectura</span>
+                  <span>•</span>
+                  <time itemprop="datePublished" datetime="2026-02-15">15 Feb 2026</time>
+                </div>
+                <h3 itemprop="headline" class="text-2xl sm:text-3xl font-black text-stone-900 dark:text-white mb-4 font-display leading-tight hover:text-amber-700 dark:hover:text-amber-500 transition-colors">
+                  La Revolución Silenciosa del CLT: Cómo la Madera Masiva Desplaza al Hormigón
+                </h3>
+                <p itemprop="description" class="text-stone-600 dark:text-stone-400 text-sm leading-relaxed mb-6 line-clamp-3">
+                  Análisis técnico del comportamiento estructural, resistencia sísmica y secuestro de carbono de los paneles de madera contralaminada en climas andinos.
+                </p>
+              </div>
+              <div class="flex items-center gap-3 pt-6 border-t border-stone-200 dark:border-stone-800">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Arq. Tomás Valenzuela" class="w-10 h-10 rounded-full object-cover" />
+                <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+                  <div itemprop="name" class="font-bold text-xs text-stone-900 dark:text-white">Arq. Tomás Valenzuela</div>
+                  <div class="text-[11px] text-stone-500 dark:text-stone-400">Socio Director & Estructuras</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Grid Container -->
+      <div id="blog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <!-- Hydrated by App.renderBlog() -->
+      </div>
+
+      <!-- Newsletter Subscription Card -->
+      <div class="arch-card rounded-3xl p-8 sm:p-12 border border-amber-600/30 text-center max-w-3xl mx-auto">
+        <div class="w-12 h-12 mx-auto mb-4 rounded-2xl bg-amber-50 dark:bg-amber-950/80 text-amber-700 dark:text-amber-400 flex items-center justify-center">
+          <i data-lucide="mail" class="w-6 h-6"></i>
+        </div>
+        <h3 class="text-2xl font-bold font-display text-stone-900 dark:text-white mb-2">
+          Suscríbete al Cuaderno de Obra Mensual
+        </h3>
+        <p class="text-stone-600 dark:text-stone-400 text-sm max-w-lg mx-auto mb-6">
+          Ensayos exclusivos sobre arquitectura regenerativa, visitas a obras en construcción y fotografías inéditas sin algoritmos.
+        </p>
+        <form id="newsletter-form" class="flex flex-col sm:flex-row items-center gap-3 max-w-md mx-auto">
+          <input type="email" id="newsletter-email" required placeholder="tu.correo@dominio.com" class="w-full px-4 py-3 rounded-xl border border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-900 text-sm text-stone-900 dark:text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-600" />
+          <button type="submit" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-amber-700 hover:bg-amber-800 text-white font-bold text-xs uppercase tracking-wider whitespace-nowrap transition-colors shadow">
+            Suscribirme
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       ABOUT US & TEAM
+       ==================================================================== -->
+  <section id="estudio" class="py-24 sm:py-32 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
+        <div class="lg:col-span-6">
+          <span class="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-50 dark:bg-amber-950/70 text-amber-800 dark:text-amber-400 border border-amber-200 dark:border-amber-800">
+            Nuestra Filosofía
+          </span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-stone-900 dark:text-white font-display mt-4 mb-6 tracking-tight">
+            Menos hormigón genérico, más conexión con la tierra.
+          </h2>
+          <p class="text-stone-600 dark:text-stone-300 text-base leading-relaxed mb-6">
+            Fundamos Vértice en Medellín con el propósito de devolver la arquitectura a sus orígenes: construir refugios serenos que aprovechen la brisa, capturen la luz cenital y envejezcan con nobleza mediante el uso de maderas macizas, piedras autóctonas y tierra compactada.
+          </p>
+          <p class="text-stone-600 dark:text-stone-300 text-base leading-relaxed mb-8">
+            Rechazamos las fórmulas industriales repetitivas. Diseñamos un número rigurosamente limitado de obras por año para garantizar supervisión personal y dedicación artesanal en cada detalle.
+          </p>
+          
+          <div class="grid grid-cols-2 gap-4">
+            <div class="p-4 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800">
+              <div class="font-bold text-stone-900 dark:text-white text-sm mb-1 uppercase tracking-wider">Materiales Honestos</div>
+              <p class="text-xs text-stone-500 leading-relaxed">Sin enchapados plásticos ni materiales que falseen su origen estructural.</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800">
+              <div class="font-bold text-stone-900 dark:text-white text-sm mb-1 uppercase tracking-wider">Climatización Pasiva</div>
+              <p class="text-xs text-stone-500 leading-relaxed">Confort térmico natural aprovechando la inercia del suelo y la orientación del sol.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 relative">
+          <div class="rounded-3xl overflow-hidden shadow-2xl border border-stone-200 dark:border-stone-800">
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1000&q=80" alt="Detalle de patio de luz y muro de tierra apisonada" class="w-full h-auto object-cover" />
+          </div>
+          <div class="absolute -bottom-6 -left-6 p-6 rounded-2xl glass shadow-xl border border-white/30 hidden sm:block">
+            <div class="text-3xl font-black text-amber-700 dark:text-amber-500 font-display">100%</div>
+            <div class="text-xs font-bold uppercase tracking-wider text-stone-700 dark:text-stone-200">Materiales Trazables</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Members Grid -->
+      <div class="mb-8">
+        <h3 class="text-2xl font-bold text-stone-900 dark:text-white font-display text-center mb-10">
+          Dirección del Estudio
+        </h3>
+        <div id="team-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div itemprop="employee" itemscope itemtype="https://schema.org/Person" class="arch-card rounded-3xl p-6 text-center group">
+            <div class="relative w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden border-2 border-amber-600/30 group-hover:border-amber-600 transition-colors">
+              <img itemprop="image" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Arq. Natalia Zuluaga" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+            </div>
+            <h4 itemprop="name" class="text-lg font-bold text-stone-900 dark:text-white font-display mb-1">Arq. Natalia Zuluaga</h4>
+            <div itemprop="jobTitle" class="text-xs font-bold text-amber-700 dark:text-amber-500 uppercase tracking-wider mb-3">Socia Directora & Arquitectura Bioclimática</div>
+            <p itemprop="description" class="text-xs text-stone-600 dark:text-stone-400 leading-relaxed mb-4">Máster en Arquitectura Sostenible por la UPC. Más de 15 años liderando proyectos de hábitat pasivo y tierra apisonada.</p>
+            <div class="flex items-center justify-center gap-3 text-stone-400">
+              <a href="#" class="hover:text-amber-700 transition-colors" title="Instagram"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+              <a href="#" class="hover:text-amber-700 transition-colors" title="LinkedIn"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+            </div>
+          </div>
+
+          <div itemprop="employee" itemscope itemtype="https://schema.org/Person" class="arch-card rounded-3xl p-6 text-center group">
+            <div class="relative w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden border-2 border-amber-600/30 group-hover:border-amber-600 transition-colors">
+              <img itemprop="image" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Arq. Tomás Valenzuela" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+            </div>
+            <h4 itemprop="name" class="text-lg font-bold text-stone-900 dark:text-white font-display mb-1">Arq. Tomás Valenzuela</h4>
+            <div itemprop="jobTitle" class="text-xs font-bold text-amber-700 dark:text-amber-500 uppercase tracking-wider mb-3">Socio Director & Estructuras de Madera</div>
+            <p itemprop="description" class="text-xs text-stone-600 dark:text-stone-400 leading-relaxed mb-4">Especialista en sistemas constructivos en CLT y prefabricación modular de alta precisión. Conferencista internacional.</p>
+            <div class="flex items-center justify-center gap-3 text-stone-400">
+              <a href="#" class="hover:text-amber-700 transition-colors" title="Instagram"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+              <a href="#" class="hover:text-amber-700 transition-colors" title="LinkedIn"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+            </div>
+          </div>
+
+          <div itemprop="employee" itemscope itemtype="https://schema.org/Person" class="arch-card rounded-3xl p-6 text-center group">
+            <div class="relative w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden border-2 border-amber-600/30 group-hover:border-amber-600 transition-colors">
+              <img itemprop="image" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Arq. Camila Henao" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+            </div>
+            <h4 itemprop="name" class="text-lg font-bold text-stone-900 dark:text-white font-display mb-1">Arq. Camila Henao</h4>
+            <div itemprop="jobTitle" class="text-xs font-bold text-amber-700 dark:text-amber-500 uppercase tracking-wider mb-3">Directora de Interiorismo & Materialidades</div>
+            <p itemprop="description" class="text-xs text-stone-600 dark:text-stone-400 leading-relaxed mb-4">Enfocada en diseño sensorial, neuroarquitectura y curaduría de artesanías vivas y textiles orgánicos para hospitalidad.</p>
+            <div class="flex items-center justify-center gap-3 text-stone-400">
+              <a href="#" class="hover:text-amber-700 transition-colors" title="Instagram"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+              <a href="#" class="hover:text-amber-700 transition-colors" title="LinkedIn"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+            </div>
+          </div>
+
+          <div itemprop="employee" itemscope itemtype="https://schema.org/Person" class="arch-card rounded-3xl p-6 text-center group">
+            <div class="relative w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden border-2 border-amber-600/30 group-hover:border-amber-600 transition-colors">
+              <img itemprop="image" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" alt="Ing. Julián Restrepo" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+            </div>
+            <h4 itemprop="name" class="text-lg font-bold text-stone-900 dark:text-white font-display mb-1">Ing. Julián Restrepo</h4>
+            <div itemprop="jobTitle" class="text-xs font-bold text-amber-700 dark:text-amber-500 uppercase tracking-wider mb-3">Director Técnico & Gerencia de Obra</div>
+            <p itemprop="description" class="text-xs text-stone-600 dark:text-stone-400 leading-relaxed mb-4">Ingeniero civil certificado LEED AP BD+C. Garantiza el estricto cumplimiento de cronogramas y control de calidad en obra.</p>
+            <div class="flex items-center justify-center gap-3 text-stone-400">
+              <a href="#" class="hover:text-amber-700 transition-colors" title="LinkedIn"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       TESTIMONIALS SECTION
+       ==================================================================== -->
+  <section class="py-24 sm:py-32 bg-stone-100/70 dark:bg-stone-900/50 border-y border-stone-200/70 dark:border-stone-800/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-50 dark:bg-amber-950/70 text-amber-800 dark:text-amber-400 border border-amber-200 dark:border-amber-800">
+          Voz de Nuestros Clientes
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-black text-stone-900 dark:text-white font-display mt-4 mb-4">
+          La Experiencia de Habitar
+        </h2>
+        
+        <!-- SCHEMA.ORG: AGGREGATERATING -->
+        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating" class="inline-flex items-center gap-2 mb-4 p-2.5 px-4 rounded-full bg-amber-50 dark:bg-amber-950/70 border border-amber-200/80 dark:border-amber-800/80 text-xs text-amber-900 dark:text-amber-200 font-bold shadow-sm">
+          <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
+          <span>Valoración Promedio: <span itemprop="ratingValue">5.0</span> de <span itemprop="bestRating">5</span> (<span itemprop="reviewCount">92</span> valoraciones auditadas)</span>
+          <meta itemprop="worstRating" content="1" />
+        </div>
+
+        <p class="text-stone-600 dark:text-stone-400 text-sm sm:text-base">
+          Propietarios, familias y directores de hoteles que confiaron en nuestra visión para dar vida a sus espacios.
+        </p>
+      </div>
+
+      <div id="testimonials-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div itemprop="review" itemscope itemtype="https://schema.org/Review" class="arch-card rounded-3xl p-8 flex flex-col justify-between">
+          <div>
+            <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" class="flex items-center gap-1 text-amber-500 mb-4">
+              <meta itemprop="ratingValue" content="5" />
+              <meta itemprop="bestRating" content="5" />
+              <meta itemprop="worstRating" content="1" />
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            </div>
+            <p itemprop="reviewBody" class="text-sm text-stone-700 dark:text-stone-300 italic mb-6 leading-relaxed">"Vértice no solo diseñó nuestra casa, entendió cómo queríamos vivir los próximos 30 años. La conexión entre los patios interiores y el bosque es sublime."</p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-stone-100 dark:border-stone-800">
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80" alt="Santiago & Mariana Cárdenas" class="w-11 h-11 rounded-full object-cover" />
+            <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <div itemprop="name" class="font-bold text-sm text-stone-900 dark:text-white">Santiago & Mariana Cárdenas</div>
+              <div class="text-xs text-stone-500 dark:text-stone-400">Propietarios de Casa Bruma</div>
+            </div>
+          </div>
+        </div>
+
+        <div itemprop="review" itemscope itemtype="https://schema.org/Review" class="arch-card rounded-3xl p-8 flex flex-col justify-between">
+          <div>
+            <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" class="flex items-center gap-1 text-amber-500 mb-4">
+              <meta itemprop="ratingValue" content="5" />
+              <meta itemprop="bestRating" content="5" />
+              <meta itemprop="worstRating" content="1" />
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            </div>
+            <p itemprop="reviewBody" class="text-sm text-stone-700 dark:text-stone-300 italic mb-6 leading-relaxed">"El rigor técnico en el presupuesto y el respeto reverencial por los materiales locales convirtieron al Hotel Umbral en el mayor referente de turismo sostenible del país."</p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-stone-100 dark:border-stone-800">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Felipe Echeverri" class="w-11 h-11 rounded-full object-cover" />
+            <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <div itemprop="name" class="font-bold text-sm text-stone-900 dark:text-white">Felipe Echeverri</div>
+              <div class="text-xs text-stone-500 dark:text-stone-400">Gerente General Umbral Hotels</div>
+            </div>
+          </div>
+        </div>
+
+        <div itemprop="review" itemscope itemtype="https://schema.org/Review" class="arch-card rounded-3xl p-8 flex flex-col justify-between">
+          <div>
+            <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" class="flex items-center gap-1 text-amber-500 mb-4">
+              <meta itemprop="ratingValue" content="5" />
+              <meta itemprop="bestRating" content="5" />
+              <meta itemprop="worstRating" content="1" />
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            </div>
+            <p itemprop="reviewBody" class="text-sm text-stone-700 dark:text-stone-300 italic mb-6 leading-relaxed">"Su capacidad para resolver estructuras complejas de madera con elegancia poética es asombrosa. El pabellón se construyó en tiempo récord sin retrasos."</p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-stone-100 dark:border-stone-800">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&q=80" alt="Lucía Vélez" class="w-11 h-11 rounded-full object-cover" />
+            <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <div itemprop="name" class="font-bold text-sm text-stone-900 dark:text-white">Lucía Vélez</div>
+              <div class="text-xs text-stone-500 dark:text-stone-400">Café & Jardín Orquidiario</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       FAQS ACCORDION (SCHEMA.ORG: FAQPAGE)
+       ==================================================================== -->
+  <section class="py-24 sm:py-32 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-14">
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-50 dark:bg-amber-950/70 text-amber-800 dark:text-amber-400 border border-amber-200 dark:border-amber-800">
+          Preguntas Frecuentes
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-black text-stone-900 dark:text-white font-display mt-4 mb-3">
+          Claridad Antes del Primer Trazo
+        </h2>
+        <p class="text-stone-600 dark:text-stone-400 text-sm">
+          Resolvemos tus dudas sobre licencias, presupuestos, tiempos y dirección de obra.
+        </p>
+      </div>
+
+      <div id="faqs-container" itemprop="subjectOf" itemscope itemtype="https://schema.org/FAQPage" class="space-y-4">
+        <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" class="rounded-2xl border border-stone-200 dark:border-stone-800 bg-white/80 dark:bg-stone-900/80 overflow-hidden">
+          <button onclick="App.toggleFaq(0)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-display font-bold text-stone-900 dark:text-white hover:text-amber-700 dark:hover:text-amber-500 transition-colors">
+            <span itemprop="name">¿Cómo se calculan los honorarios arquitectónicos en Vértice?</span>
+            <i data-lucide="chevron-down" id="faq-icon-0" class="w-5 h-5 text-stone-400 transform transition-transform duration-300"></i>
+          </button>
+          <div id="faq-content-0" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="hidden px-6 pb-5 text-sm text-stone-600 dark:text-stone-300 leading-relaxed border-t border-stone-100 dark:border-stone-800/60 pt-3">
+            <div itemprop="text">Nuestros honorarios se establecen de forma transparente según los metros cuadrados (m²) a intervenir y la complejidad tipológica. Trabajamos con tarifas fijas por hito entregable (diagnóstico, anteproyecto, proyecto ejecutivo y dirección de obra), sin porcentajes ambiguos sobre compras de materiales.</div>
+          </div>
+        </div>
+
+        <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" class="rounded-2xl border border-stone-200 dark:border-stone-800 bg-white/80 dark:bg-stone-900/80 overflow-hidden">
+          <button onclick="App.toggleFaq(1)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-display font-bold text-stone-900 dark:text-white hover:text-amber-700 dark:hover:text-amber-500 transition-colors">
+            <span itemprop="name">¿Diseñan proyectos fuera de Colombia o en zonas rurales remotas?</span>
+            <i data-lucide="chevron-down" id="faq-icon-1" class="w-5 h-5 text-stone-400 transform transition-transform duration-300"></i>
+          </button>
+          <div id="faq-content-1" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="hidden px-6 pb-5 text-sm text-stone-600 dark:text-stone-300 leading-relaxed border-t border-stone-100 dark:border-stone-800/60 pt-3">
+            <div itemprop="text">Sí. Más del 40% de nuestras obras se sitúan en entornos campestres, montañosos o costeros remotos (Boyacá, Santander, Chocó, Eje Cafetero, México y Costa Rica). Realizamos levantamientos con drones, estudios de asoleamiento digital y visitas presenciales programadas en fases críticas.</div>
+          </div>
+        </div>
+
+        <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" class="rounded-2xl border border-stone-200 dark:border-stone-800 bg-white/80 dark:bg-stone-900/80 overflow-hidden">
+          <button onclick="App.toggleFaq(2)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-display font-bold text-stone-900 dark:text-white hover:text-amber-700 dark:hover:text-amber-500 transition-colors">
+            <span itemprop="name">¿Qué significa exactamente que una vivienda sea 'bioclimática'?</span>
+            <i data-lucide="chevron-down" id="faq-icon-2" class="w-5 h-5 text-stone-400 transform transition-transform duration-300"></i>
+          </button>
+          <div id="faq-content-2" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="hidden px-6 pb-5 text-sm text-stone-600 dark:text-stone-300 leading-relaxed border-t border-stone-100 dark:border-stone-800/60 pt-3">
+            <div itemprop="text">Una casa bioclimática se diseña en estricta sincronía con su microclima específico: la trayectoria solar, vientos predominantes, pluviometría y temperatura del suelo. Emplea ventilación cruzada natural, inercia térmica de muros y aleros calculados para no necesitar aire acondicionado ni calefacción eléctrica.</div>
+          </div>
+        </div>
+
+        <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" class="rounded-2xl border border-stone-200 dark:border-stone-800 bg-white/80 dark:bg-stone-900/80 overflow-hidden">
+          <button onclick="App.toggleFaq(3)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-display font-bold text-stone-900 dark:text-white hover:text-amber-700 dark:hover:text-amber-500 transition-colors">
+            <span itemprop="name">¿Es más costosa la madera laminada CLT o la tapia pisada que el concreto?</span>
+            <i data-lucide="chevron-down" id="faq-icon-3" class="w-5 h-5 text-stone-400 transform transition-transform duration-300"></i>
+          </button>
+          <div id="faq-content-3" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="hidden px-6 pb-5 text-sm text-stone-600 dark:text-stone-300 leading-relaxed border-t border-stone-100 dark:border-stone-800/60 pt-3">
+            <div itemprop="text">El costo por metro cuadrado de material puede ser similar, pero el ahorro real se produce en los plazos de obra: una estructura en CLT se monta en 3 semanas en lugar de 4 meses de encofrados de hormigón, reduciendo costos de administración de obra y eliminando acabados posteriores.</div>
+          </div>
+        </div>
+
+        <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" class="rounded-2xl border border-stone-200 dark:border-stone-800 bg-white/80 dark:bg-stone-900/80 overflow-hidden">
+          <button onclick="App.toggleFaq(4)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-display font-bold text-stone-900 dark:text-white hover:text-amber-700 dark:hover:text-amber-500 transition-colors">
+            <span itemprop="name">¿Cómo garantizan que el presupuesto no se desborde durante la construcción?</span>
+            <i data-lucide="chevron-down" id="faq-icon-4" class="w-5 h-5 text-stone-400 transform transition-transform duration-300"></i>
+          </button>
+          <div id="faq-content-4" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="hidden px-6 pb-5 text-sm text-stone-600 dark:text-stone-300 leading-relaxed border-t border-stone-100 dark:border-stone-800/60 pt-3">
+            <div itemprop="text">Mediante modelado BIM y un Libro de Detalles 1:1 antes de mover el primer metro de tierra. Al cerrar todas las especificaciones de carpinterías, redes e iluminación en la fase de proyecto ejecutivo, se eliminan los imprevistos en obra.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       CONTACT SECTION
+       ==================================================================== -->
+  <section id="contacto" class="py-24 sm:py-32 bg-stone-900 text-white relative overflow-hidden">
+    <!-- Ambient glow inside dark section -->
+    <div class="ambient-glow bg-amber-700/25 w-[500px] h-[500px] top-0 right-0"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Contact Information -->
+        <div class="lg:col-span-5 flex flex-col justify-between">
+          <div>
+            <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-600/20 text-amber-400 border border-amber-600/30">
+              Iniciemos tu Proyecto
+            </span>
+            <h2 class="text-3xl sm:text-5xl font-black font-display mt-4 mb-6 leading-tight">
+              Conversemos sobre el terreno y tus aspiraciones.
+            </h2>
+            <p class="text-stone-300 text-base leading-relaxed mb-8">
+              Ya sea que cuentes con un lote campestre sin urbanizar o busques reconvertir una estructura patrimonial, nuestro equipo te orientará sobre la viabilidad constructiva y normativa.
+            </p>
+
+            <div class="space-y-4 text-sm text-stone-300 mb-8">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-stone-800 flex items-center justify-center text-amber-400">
+                  <i data-lucide="mail" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-stone-400">Correo directo del estudio</div>
+                  <a href="mailto:estudio@vertice-arquitectura.co" class="font-bold text-white hover:text-amber-400 transition-colors">estudio@vertice-arquitectura.co</a>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-stone-800 flex items-center justify-center text-amber-400">
+                  <i data-lucide="phone" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-stone-400">Línea directa & WhatsApp técnico</div>
+                  <a href="tel:+576044489120" class="font-bold text-white hover:text-amber-400 transition-colors">+57 (604) 448-9120</a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-xl bg-stone-800 flex items-center justify-center text-amber-400 flex-shrink-0 mt-0.5">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-stone-400">Estudio Principal & Geoubicación</div>
+                  <!-- SCHEMA.ORG: POSTALADDRESS & GEOCOORDINATES -->
+                  <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" class="font-bold text-white">
+                    <span itemprop="streetAddress">Calle 10 # 43D-28, El Poblado</span>, 
+                    <span itemprop="addressLocality">Medellín</span>, 
+                    <span itemprop="addressRegion">Antioquia</span>, 
+                    <span itemprop="addressCountry">Colombia</span>
+                  </div>
+                  <div itemprop="geo" itemscope itemtype="https://schema.org/GeoCoordinates" class="text-[11px] text-amber-500/90 mt-0.5 flex items-center gap-1 font-mono">
+                    <meta itemprop="latitude" content="6.2087" />
+                    <meta itemprop="longitude" content="-75.5684" />
+                    <i data-lucide="navigation" class="w-3 h-3"></i>
+                    <span>GPS: 6.2087° N, -75.5684° W</span>
+                  </div>
+                  <!-- SCHEMA.ORG: OPENINGHOURSSPECIFICATION -->
+                  <div itemprop="openingHoursSpecification" itemscope itemtype="https://schema.org/OpeningHoursSpecification" class="text-[11px] text-stone-400 mt-1 flex items-center gap-1">
+                    <link itemprop="dayOfWeek" href="https://schema.org/Monday" />
+                    <link itemprop="dayOfWeek" href="https://schema.org/Tuesday" />
+                    <link itemprop="dayOfWeek" href="https://schema.org/Wednesday" />
+                    <link itemprop="dayOfWeek" href="https://schema.org/Thursday" />
+                    <link itemprop="dayOfWeek" href="https://schema.org/Friday" />
+                    <i data-lucide="clock" class="w-3 h-3 text-amber-400"></i>
+                    <span>Lun a Vie: <time itemprop="opens" datetime="08:30">8:30 AM</time> - <time itemprop="closes" datetime="18:00">6:00 PM</time></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-6 border-t border-stone-800 flex items-center gap-4 text-stone-400 text-sm">
+            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400"></i>
+            <span>Realizamos visitas de reconocimiento a lote en toda la región.</span>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="lg:col-span-7">
+          <form id="contact-form" class="p-8 sm:p-10 rounded-3xl bg-stone-800/90 border border-stone-700 backdrop-blur space-y-6">
+            <h3 class="text-xl font-bold font-display text-white">Solicitar Diagnóstico Preliminar</h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-stone-300 mb-1.5">Nombre Completo *</label>
+                <input type="text" id="contact-name" required placeholder="Ej. Arq. o Propietario" class="w-full px-4 py-3 rounded-xl bg-stone-900 border border-stone-700 text-white placeholder-stone-500 text-sm focus:outline-none focus:ring-2 focus:ring-amber-600" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-stone-300 mb-1.5">Correo Electrónico *</label>
+                <input type="email" id="contact-email" required placeholder="correo@ejemplo.com" class="w-full px-4 py-3 rounded-xl bg-stone-900 border border-stone-700 text-white placeholder-stone-500 text-sm focus:outline-none focus:ring-2 focus:ring-amber-600" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-stone-300 mb-1.5">Tipología Deseada</label>
+                <select id="contact-typology" class="w-full px-4 py-3 rounded-xl bg-stone-900 border border-stone-700 text-white text-sm focus:outline-none focus:ring-2 focus:ring-amber-600">
+                  <option value="residencial">Vivienda Campestre / Unifamiliar</option>
+                  <option value="interiorismo">Diseño de Interiores & Remodelación</option>
+                  <option value="hospitalidad">Hotel Boutique / Ecoturismo</option>
+                  <option value="comercial">Pabellón Comercial / Restaurante</option>
+                  <option value="rehabilitacion">Rehabilitación Patrimonial</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-stone-300 mb-1.5">Ubicación del Lote / Predio</label>
+                <input type="text" id="contact-location" placeholder="Ej. El Retiro, Barichara, etc." class="w-full px-4 py-3 rounded-xl bg-stone-900 border border-stone-700 text-white placeholder-stone-500 text-sm focus:outline-none focus:ring-2 focus:ring-amber-600" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-stone-300 mb-1.5">Detalles del Proyecto o Dudas *</label>
+              <textarea id="contact-message" required rows="4" placeholder="Describe brevemente el terreno, metros cuadrados aproximados, estilo o fechas tentativas..." class="w-full px-4 py-3 rounded-xl bg-stone-900 border border-stone-700 text-white placeholder-stone-500 text-sm focus:outline-none focus:ring-2 focus:ring-amber-600"></textarea>
+            </div>
+
+            <button type="submit" id="contact-submit-btn" class="w-full py-4 rounded-xl bg-amber-700 hover:bg-amber-600 text-white font-bold text-xs uppercase tracking-widest shadow-lg shadow-amber-800/30 transition-all flex items-center justify-center gap-2">
+              <span>Enviar Consulta a Dirección Arquitectónica</span>
+              <i data-lucide="send" class="w-4 h-4"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="bg-stone-950 text-stone-400 py-16 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        
+        <!-- Brand info -->
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-2xl bg-amber-700 flex items-center justify-center text-white">
+              <i data-lucide="triangle" class="w-5 h-5 fill-white"></i>
+            </div>
+            <span class="text-2xl font-black font-display text-white tracking-tight">VÉRTICE<span class="text-amber-500">.</span></span>
+          </div>
+          <p class="text-sm text-stone-400 leading-relaxed mb-6 max-w-sm">
+            Estudio de arquitectura bioclimática, estructuras en madera maciza y diseño de interiores sensorial. Obras que habitan el paisaje con respeto.
+          </p>
+          <div class="flex items-center gap-3">
+            <a itemprop="sameAs" href="https://instagram.com" target="_blank" class="w-9 h-9 rounded-xl bg-stone-900 hover:bg-amber-700 text-stone-400 hover:text-white flex items-center justify-center transition-colors"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+            <a itemprop="sameAs" href="https://behance.net" target="_blank" class="w-9 h-9 rounded-xl bg-stone-900 hover:bg-amber-700 text-stone-400 hover:text-white flex items-center justify-center transition-colors"><i data-lucide="layout" class="w-4 h-4"></i></a>
+            <a itemprop="sameAs" href="https://pinterest.com" target="_blank" class="w-9 h-9 rounded-xl bg-stone-900 hover:bg-amber-700 text-stone-400 hover:text-white flex items-center justify-center transition-colors"><i data-lucide="pin" class="w-4 h-4"></i></a>
+            <a itemprop="sameAs" href="https://linkedin.com" target="_blank" class="w-9 h-9 rounded-xl bg-stone-900 hover:bg-amber-700 text-stone-400 hover:text-white flex items-center justify-center transition-colors"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Explorar</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#obras" class="hover:text-white transition-colors">Portafolio de Obras</a></li>
+            <li><a href="#servicios" class="hover:text-white transition-colors">Servicios Profesionales</a></li>
+            <li><a href="#cotizador" class="hover:text-white transition-colors">Estimador de Presupuesto</a></li>
+            <li><a href="#bitacora" class="hover:text-white transition-colors">Bitácora & Ensayos</a></li>
+            <li><a href="#estudio" class="hover:text-white transition-colors">Filosofía & Equipo</a></li>
+          </ul>
+        </div>
+
+        <!-- Tipologías -->
+        <div>
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Especialidades</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#obras" class="hover:text-white transition-colors">Arquitectura Passivhaus</a></li>
+            <li><a href="#obras" class="hover:text-white transition-colors">Estructuras en Madera CLT</a></li>
+            <li><a href="#obras" class="hover:text-white transition-colors">Tapia Pisada & Tierra</a></li>
+            <li><a href="#obras" class="hover:text-white transition-colors">Diseño Interior Biofílico</a></li>
+            <li><a href="#obras" class="hover:text-white transition-colors">Piscinas Naturales</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Sede -->
+        <div>
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Sede Central</h4>
+          <p class="text-sm mb-1 text-stone-200">El Poblado, Medellín, Colombia</p>
+          <p class="text-sm mb-3 text-amber-500 font-medium">estudio@vertice-arquitectura.co</p>
+          <p class="text-xs text-stone-500 leading-relaxed">
+            Atención personalizada con cita previa en estudio o visita técnica a lote.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-stone-900 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+        <div>
+          © 2026 VÉRTICE Arquitectura & Hábitat Sostenible S.A.S. Todos los derechos reservados.
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-stone-400 transition-colors">Aviso Legal</a>
+          <a href="#" class="hover:text-stone-400 transition-colors">Privacidad de Datos</a>
+          <a href="#" class="hover:text-stone-400 transition-colors">Registro Profesional CPNAA</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       PROJECT DETAIL MODAL (MEMORIA ARQUITECTÓNICA)
+       ==================================================================== -->
+  <div id="project-modal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-stone-950/80 backdrop-blur-sm overflow-y-auto">
+    <div class="modal-content relative w-full max-w-4xl bg-white dark:bg-stone-900 rounded-3xl p-6 sm:p-8 shadow-2xl border border-stone-200 dark:border-stone-800 my-8 max-h-[90vh] overflow-y-auto">
+      
+      <!-- Close button -->
+      <button onclick="App.closeProjectModal()" class="absolute top-6 right-6 p-2 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-500 hover:text-stone-900 dark:hover:text-white transition-colors z-20" title="Cerrar modal">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div id="project-modal-body">
+        <!-- Injected via App.openProjectModal() -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       BLOG ARTICLE READER MODAL (READER VIEW)
+       ==================================================================== -->
+  <div id="article-modal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-stone-950/80 backdrop-blur-sm overflow-y-auto">
+    <div class="modal-content relative w-full max-w-3xl bg-white dark:bg-stone-900 rounded-3xl p-6 sm:p-10 shadow-2xl border border-stone-200 dark:border-stone-800 my-8 max-h-[90vh] overflow-y-auto">
+      
+      <!-- Close button -->
+      <button onclick="App.closeArticleModal()" class="absolute top-6 right-6 p-2 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-500 hover:text-stone-900 dark:hover:text-white transition-colors z-20" title="Cerrar modal">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div id="article-modal-body">
+        <!-- Injected via App.openArticleModal() -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       SPOTLIGHT QUICK SEARCH MODAL (Ctrl + K)
+       ==================================================================== -->
+  <div id="spotlight-modal" class="modal-backdrop fixed inset-0 z-50 flex items-start justify-center p-4 sm:p-6 pt-20 sm:pt-28 bg-stone-950/80 backdrop-blur-sm">
+    <div class="modal-content relative w-full max-w-2xl bg-white dark:bg-stone-900 rounded-3xl shadow-2xl border border-stone-200 dark:border-stone-800 overflow-hidden">
+      
+      <div class="p-4 border-b border-stone-100 dark:border-stone-800 flex items-center gap-3">
+        <i data-lucide="search" class="w-5 h-5 text-amber-700 flex-shrink-0"></i>
+        <input type="text" id="spotlight-input" oninput="App.handleSpotlightSearch(this.value)" placeholder="Buscar obras por material o leer bitácora... (Esc para salir)" class="w-full bg-transparent text-sm text-stone-900 dark:text-white placeholder-stone-400 focus:outline-none" autocomplete="off" />
+        <button onclick="App.closeSpotlight()" class="p-1 rounded-lg text-stone-400 hover:text-stone-600 dark:hover:text-white">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <div id="spotlight-results" class="max-h-96 overflow-y-auto divide-y divide-stone-100 dark:divide-stone-800/60">
+        <!-- Injected via App.handleSpotlightSearch() -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       TOAST NOTIFICATION COMPONENT
+       ==================================================================== -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 flex items-center gap-3 px-5 py-3.5 rounded-2xl bg-stone-900 text-white shadow-2xl border border-stone-700">
+    <div class="w-7 h-7 rounded-lg bg-amber-700/30 text-amber-400 flex items-center justify-center">
+      <i id="toast-icon" data-lucide="info" class="w-4 h-4"></i>
+    </div>
+    <span id="toast-message" class="text-xs font-semibold">Notificación</span>
+  </div>
+
+  <!-- ====================================================================
+       BACK TO TOP BUTTON
+       ==================================================================== -->
+  <button id="back-to-top" onclick="App.scrollToTop()" class="opacity-0 pointer-events-none fixed bottom-6 left-6 z-40 p-3.5 rounded-2xl bg-white dark:bg-stone-900 text-stone-600 dark:text-stone-300 border border-stone-200 dark:border-stone-800 shadow-xl hover:bg-stone-100 dark:hover:bg-stone-800 transition-all duration-300 hover:-translate-y-1" title="Volver al inicio">
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
